@@ -58,9 +58,12 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+
 gem 'jquery-rails'
-gem 'bootstrap', '4.0.0.alpha6'
+gem 'rails-ujs', '~> 0.1.0'
 gem 'popper_js', '~> 1.11.1'
+gem 'bootstrap', '4.0.0.alpha6'
+
 
 
 source 'https://rails-assets.org' do
