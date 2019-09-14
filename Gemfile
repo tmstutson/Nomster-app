@@ -63,7 +63,7 @@ gem 'jquery-rails'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
-
+gem 'simple_form'
 
 
 source 'https://rails-assets.org' do
