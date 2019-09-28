@@ -15,3 +15,7 @@ private
 		params.require(:comment).permit(:message, :rating)
 	end
 end
+
+
+
+

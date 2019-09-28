@@ -1,12 +1,13 @@
-class CreatePhotos < ActiveRecord::Migration[5.2]
+class CreatePhotos < ActiveRecord::Migration[5.0]
   def change
     create_table :photos do |t|
-			t.integer :place_id
 			t.text :caption
+			t.integer :place_id
 			t.timestamps
     end
  	
- 	add_index :photos, [:caption, :place_id]
+ 	
+	add_index :photos, [:user, :place_id]
 	add_index :photos, :place_id
  end
 end

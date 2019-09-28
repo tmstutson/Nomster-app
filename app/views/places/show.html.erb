@@ -84,6 +84,7 @@
 </div>
 
 
+
 <h1>Comments</h1>
 <div class="row">
 <% @place.comments.each do |comment| %>
@@ -109,7 +110,9 @@
 
 <div class="clear"></div>
 
-<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %> 
-  <% end %>
 
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+<% end %>
 
+<% @place.photos.each do |photo| %>
+<% end %>
